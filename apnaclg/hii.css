@@ -1,0 +1,14 @@
+p{
+    color:blue;
+}
+.special{
+color:aquamarine;
+font-weight: bold;
+}
+li em{
+    color:azure;
+}
+a.hover{
+    color:aliceblue;
+    text-decoration: line-through;
+}
