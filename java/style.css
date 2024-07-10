@@ -1,0 +1,194 @@
+*{
+    margin:0;
+    padding:0;
+}
+/* CSS VARIABLES */
+:root{
+    --navbar-height: 50px;
+
+}
+
+/* NAVIGATION BAR */
+
+#navbar{
+   display: flex;
+    align-items:center;
+    /* this will align all the things to centre of page */
+    /* justify-content: center; */
+}
+
+/* navigation logo margin */
+#logo{
+    margin:10px 10px;
+}
+
+/* 
+navigation logo image */
+#logo img{
+    height: 80px;
+    margin: 20px 20px;
+}
+/* navigation bar list style */
+#navbar ul{
+    display:flex;
+}
+#navbar ul li{
+    /* color:white ;*/
+    list-style: none;
+    font: size 1.3em; ;
+
+}
+#navbar ul li a{
+    /* display:block; */
+    padding: 3px 5px;
+    border-radius: 30px;
+    text-decoration: aqua;}
+
+
+
+
+#navbar ul li a:hover{
+    /* display:block; */
+    color:red;
+}
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.2;
+}
+
+#navbar{
+    position:relative;
+}
+
+/* edit home section  */
+#home{
+    display:flex;
+    flex-direction:column;
+    padding:1px 20px;
+    
+    justify-content:center;
+    text-align:center;
+    
+   
+}
+#home::before{
+    content:"";
+    position:absolute;
+    background: url("backgroud\ 2.jpg") no-repeat center center/cover;
+    height:400px;
+    width:100%;
+    top: 120px;
+    left:0px;
+    z-index:-1;
+    opacity: 0.89;
+    
+
+    
+}
+.h-primary{
+    
+    font-size :2em;;
+    /* padding :12px; */
+    text-align: center;
+
+
+    margin-top:100px; /*is comand se upar neeche hojayega text*/
+    margin-bottom: 30px;
+
+
+    white-space:nowrap
+    /* is command se text ek h line mai aayega */
+
+
+
+    /* margin-bottom:  margin-bottom: calc(50vh - 200px) */
+}
+.button{
+
+    
+        padding: 6px 20px; /* Adjust padding to reduce button size */
+        border: 2px solid #162048; /* Adds a border */
+        background-color: black;
+        color: white;
+        margin: 50px auto; /* Centers the button horizontally */
+        display: inline-block; /* Prevents the button from taking the full line */
+        width: auto; /* Ensures the button width fits the content */
+        cursor: pointer; /* Changes cursor to pointer on hover */
+        text-align: center; /* Centers text inside the button */
+}
+
+.home-parra{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+/* services section */
+#services{
+    margin: 34px;
+    display:flex;
+
+}
+.box{
+    border:2px solid green;
+    padding:4px 30px;
+    margin:3px;
+    border-radius:12px;   /*this curves the box*/
+    background: #5adeed
+}
+
+
+
+.box img {
+  height: 100px;
+  display:block;    /*  this is necessary for margin auto to work*/
+  margin:auto;
+
+
+}
+.h-primary-centre{
+
+
+    
+
+
+
+
+    text-align: center;
+    display:inline-block;
+    width:auto;
+
+    padding:6px 22px;
+    background:red;
+    margin:0 auto;
+    
+    text-align: center;
+    white-space: nowrap;
+   
+}
+.service-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.box{
+    text-align: center;
+}
+
+
+#form-group{
+    display: flex;
+    text-align: center;
+
+}
